@@ -1,0 +1,711 @@
+:root{
+  --bookAfterBackColor: 0px solid #cac670;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  color: #333;
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+.main{
+  background: url(https://png.pngtree.com/background/20210709/original/pngtree-red-atmospheric-plum-blossom-year-new-background-material-picture-image_944958.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.mid{
+  display: flex;
+  justify-content: space-around;
+}
+/* .text{
+  font-size: 80px;
+  font-weight: 500;
+  padding-top: 25px;
+  text-align: center;
+  font-family: "Great Vibes", sans-serif;
+  color: rgb(239, 197, 142);
+} */
+.patterns {
+    height: 12vh;
+    margin-top: 2rem;
+  }
+svg text {
+  font-family:"Lora", sans-serif;
+  letter-spacing: 1rem;
+  stroke: #e1bb23;
+  font-size: 10rem;
+  font-weight: 700;
+  stroke-width: 3;
+   
+  animation: textAnimate 5s infinite alternate;
+    
+}
+  
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(57, 83%, 49%)
+  
+  }
+    
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: rgb(2, 66, 25)
+  }
+    
+}
+/* cc */
+.Yearta {
+  letter-spacing: 0.5em;
+  margin: 0 auto;
+  /* display: contents; */
+  /* border: 4px double rgba(255, 255, 255, 0.25); */
+  border-width: 0.4rem 0;
+  padding: 1.5em 0em;
+  width: auto;
+  /* margin: 0 0 0 -20em; */
+}
+.Yearta span {
+  font: 700 10rem/1 "Great Vibes", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.225em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 8rem rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+  
+  /* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+h1 {
+  margin-top: -2.5rem;
+  /* padding-bottom: 6rem; */
+  padding-top: 1rem;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+  font-family: 'Teko', sans-serif;
+  font-size: 12rem;
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite alternate;
+  text-align: center;
+  color: #f5bd15;
+}
+
+  
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2rem #98871d;
+  }
+  to {
+    text-shadow: 0 0 3rem #150304, 0 0 1rem #ef0909;
+  }
+}
+/* .icon1,
+.icon2{
+    width: 400px;
+}
+.icon1 img,
+.icon2 img{
+    width: 400px;
+} */
+.chuc{
+  display: flex;
+  width: 80rem;
+  height: 20rem;
+  background-color: rgb(233, 210, 95);
+  margin: 0 auto;
+  border-radius: 2.5rem;
+}
+.chuc p{
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Great Vibes", sans-serif;
+}
+.icon1{
+  width: 30rem;
+  position: absolute;
+  top: 55%;
+  left: 12%;
+  display: none;
+  animation: upper 2s ease-in-out;
+}
+@keyframes upper{
+  0%{
+    transform: translateX(-50%);
+  }
+  50%{
+    transform: translateX(100%)
+  }
+  100%{
+    transform: translateX(0%)
+  }
+}
+.icon1 img{
+  width: 30rem;
+}
+.icon2{
+  width: 30rem;
+  position: absolute;
+  right: 15rem;
+  top: 12rem;
+}
+.icon2 img{
+  width: 30rem;
+    
+}
+.btn{
+  font-size: 3rem;
+  height: 6rem;
+  display: none;
+  justify-content: center;
+  margin-top: 28rem;
+}
+
+
+
+/* CSS */
+.btn-item {
+  /* padding: 0.6em 2em; */
+  
+  width: 19rem;
+  font-size: 3rem;
+  box-shadow: rgb(211 123 9 / 80%) 0.6rem 0.2rem 10.6rem 0.8rem, rgba(230, 54, 15, 0.8) -0.6rem -0.2rem 10.6rem 0.0rem;
+  border: none;
+  outline: none;
+  z-index: 0;
+  background: linear-gradient(144deg,#da1313 , #f3df42 ,#00eb1b);
+  cursor: pointer;
+  position: relative;
+  border-radius: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-item:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(0.5rem);
+  -webkit-filter: blur(0.5rem);
+  width: calc(100% + 0.4rem);
+  height: calc(100% + 0.4rem);
+  animation: glowing-btn-item 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 1rem;
+}
+
+@keyframes glowing-btn-item {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.btn-item:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 1rem;
+}
+.btn-item span {
+  background-color: rgb(5, 6, 45);
+  padding: 1.1rem 2.9rem;
+  border-radius: 0.9rem;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: 300ms;
+}
+.btn-item:hover span {
+  background: none;
+}
+.btn-item:hover{
+  z-index: unset;
+}
+
+/* gif */
+.gif{
+  background-image: url(https://createcustomwishes.com/wp-content/uploads/2022/11/happpy-new-year-countdown-2023.gif);
+  background-position: center;
+  width: 32rem;
+  height: 21rem;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  background-size: cover;
+}
+
+/*book   */
+.book {
+  transform-style: preserve-3d;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 21rem;
+  width: 74rem;
+  cursor: pointer;
+  backface-visibility: visible;
+  /* animation: siuuu 1s ease-in-out infinite; */
+}
+@keyframes siuuu{
+  0%{
+    transform: rotate(-2deg);
+  }
+  50%{
+    transform: rotate(2deg);
+  }
+  100%{
+    transform: rotate(-2deg);
+  }
+}
+.book::after {
+  content: '';
+  width: 3.5rem; height: 4rem;
+  border-radius: 25%;
+  border: var(--bookAfterBackColor);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  animation: ring 0.7s infinite;
+}
+@keyframes ring {
+  0% {
+    width: 35rem;
+    height: 21rem;
+    opacity: 0;
+  }
+  100% {
+    width: 40rem;
+    height: 25rem;
+    opacity: 0.8;
+  }
+}
+
+.front, .back {
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 35rem;
+  height: 100%;
+  top: 0; left: 0;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out, box-shadow .35s ease-in-out;
+  background: #ef0909;
+}
+.frontbackground{
+  background-image: url(https://thiepgialong.com/upload/images/thiep-tet-2023-gl-2941.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.page2{
+  transform-style: preserve-3d;
+  position: absolute;
+  width: 72rem;
+  height: 100%;
+  top: 0; left: -48.2%;
+  transform-origin: left center;
+  display: none;
+  background-color: rgb(255 227 87);
+  border-bottom-left-radius: 3em;
+  border-top-left-radius: 3em;
+}
+.page2 p{
+  text-align: center;
+  font-size: 3.6rem;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Great Vibes", sans-serif;
+}
+
+.back, .page2 ,.front{
+  border-bottom-right-radius: 3em;
+  border-top-right-radius: 3em;
+  
+}
+
+
+.hoverfront {
+  transform: rotateY(-190deg) scale(1.1);
+  /* box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2); */
+}
+
+.hoverpage2 {
+  transform: rotateY(-30deg) scale(1.1);
+  /* box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2); */
+  /* display: flex; */
+}
+.displaying{
+  display: flex;
+}
+.displayed{
+  display: none;
+}
+
+.hoverback {
+  transform: rotateY(0deg) scale(1.1);
+}
+
+
+
+/* pháo bông */
+.firework1{
+  position: absolute;
+  width: 1.5vmin;
+  top: 50%;
+  left: 50%;
+  animation: firework 2s infinite;
+  display: none;
+}
+.firework2{
+  position: absolute;
+  width: 1.5vmin;
+  top: 50%;
+  left: 25%;
+  animation: firework2 1.5s infinite;
+}.firework3{
+  position: absolute;
+  width: 1.5vmin;
+  top: 50%;
+  left: 75%;
+  animation: firework2 1.5s infinite;
+}
+
+@keyframes firework {
+  0% { 
+    transform: translate(-50%, 30vh);
+    width: 0.5vmin;
+    opacity: 1;
+  }
+  50% { 
+    width: 3.5vmin;
+    opacity: 1;
+  }
+  100% { 
+    width: 20vmin; 
+    opacity: 1; 
+  }
+}
+@keyframes firework2 {
+  0% { 
+    transform: translate(-50%, 45vh);
+    width: 0.5vmin;
+    opacity: 1;
+  }
+  50% { 
+    width: 0.5vmin;
+    opacity: 1;
+  }
+  100% { 
+    width: 25vmin; 
+    opacity: 1; 
+  }
+}
+
+.firework,
+.firework::before,
+.firework::after {
+  --top: 60vh;
+  content: "";
+  
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  background:
+    /* random backgrounds */
+    radial-gradient(circle, #ff0 0.2vmin, #0000 0) 50% 00%,
+    radial-gradient(circle, rgb(64, 255, 0) 0.3vmin, #0000 0) 00% 50%,
+    radial-gradient(circle, rgb(0, 255, 51) 0.5vmin, #0000 0) 50% 99%,
+    radial-gradient(circle, rgb(0, 255, 145) 0.2vmin, #0000 0) 99% 50%,
+    radial-gradient(circle, rgb(0, 195, 255) 0.3vmin, #0000 0) 80% 90%,
+    radial-gradient(circle, rgb(0, 13, 255) 0.5vmin, #0000 0) 95% 90%,
+    radial-gradient(circle, rgb(157, 0, 255) 0.5vmin, #0000 0) 10% 60%,
+    radial-gradient(circle, rgb(255, 0, 187) 0.2vmin, #0000 0) 31% 80%,
+    radial-gradient(circle, rgb(255, 0, 102) 0.3vmin, #0000 0) 80% 10%,
+    radial-gradient(circle, rgb(255, 0, 0) 0.2vmin, #0000 0) 90% 23%,
+    radial-gradient(circle, rgb(255, 208, 0) 0.3vmin, #0000 0) 45% 20%,
+    radial-gradient(circle, rgb(255, 94, 0) 0.5vmin, #0000 0) 13% 24%
+    ;
+  background-size: 0.5vmin 0.5vmin;
+  background-repeat: no-repeat;
+}
+
+.firework::before {
+  transform: translate(-50%, -50%) rotate(25deg) !important; 
+}
+
+.firework::after {
+  transform: translate(-50%, -50%) rotate(-37deg) !important;
+}
+
+
+
+/* modal layout */
+.modal{
+  position: fixed;
+  top:0;
+  right:0;
+  bottom: 0;
+  left:0;
+  display: none;
+  
+}
+
+.modal__overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+#canvas{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0.7;
+}
+
+
+
+/* video */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/*----Variables ----*/
+/*----Abstract Classes ----*/
+.envelope .shadow, .envelope .paper .message, .envelope {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*----Components ----*/
+.envelope {
+  background: #ff0000;
+  width: 22.2rem;
+  height: 30.0rem;
+}
+.envelope .cover {
+  position: relative;
+}
+.envelope .cover .top,
+.envelope .cover .side,
+.envelope .cover .bottom {
+  position: absolute;
+  width: 22.2rem;
+  z-index: 3;
+}
+.envelope .cover .top {
+  cursor: pointer;
+  filter: drop-shadow(0px 2px 3px rgba(50, 0, 50, 0.7));
+}
+.envelope .cover .top .top-cover {
+  height: calc(9rem - 3rem);
+  background: #e90202;
+  /* -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+  clip-path: polygon(0 0, 50% 100%, 100% 0); */
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+}
+.envelope .cover .side {
+  filter: drop-shadow(0px -1px 3px rgba(50, 0, 50, 0.2));
+  height: 90px;
+}
+.envelope .cover .side .left,
+.envelope .cover .side .right {
+  position: absolute;
+  background: #5d5d93;
+  width: calc(15rem / 2);
+  height: 9rem;
+}
+.envelope .cover .side .left {
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+.envelope .cover .side .right {
+  right: 0;
+  -webkit-clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  clip-path: polygon(0 50%, 100% 0, 100% 100%);
+}
+.envelope .cover .bottom {
+  top: calc(0px / 2);
+  height: 47rem;
+  background: #d00303;
+  cursor: pointer;
+  /* -webkit-clip-path: polygon(0 100%, 50% 0%, 100% 100%);
+  clip-path: polygon(0 100%, 50% 0%, 100% 100%); */
+}
+
+.logo{
+  width: 12.2rem;
+  height: 12.2rem;
+  margin: 3rem auto;
+  background-image: url(/LiXi/img/logo-removebg-preview.png);
+  background-size: contain;
+}
+.bottom p{
+  color: #f4d204;
+  font-family: 'Times New Roman', Times, serif;
+}
+.bottom .title{
+  font-size: 1.0rem;
+  text-align: center;
+  /* text-transform: uppercase; */
+  line-height: 1.4rem;
+  font-weight: 600;
+  margin-top: 7.0rem;
+}
+.bottom .p1{
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.bottom .p2{
+  font-size: 1.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.envelope .paper {
+  position: absolute;
+  /* top: 50%; */
+  left: 2%;
+  width: 16.8rem;
+  height: 40.0rem;
+  background: #dadae7;
+  color: #50507f;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(50, 0, 50, 0.3);
+  /* z-index: 1; */
+  /* background-image: url("/LiXi/img/500k.jpg"); */
+  background-size: cover;
+  background-repeat: round;
+}
+
+.paper{
+  transition: 1.5s;
+}
+.paper-open{
+  transform: translateY(-4.5rem);
+  z-index:2;
+}
+.paper-anime{
+  animation: open 2s ease-out;
+  z-index: 4;
+  
+  transform: translate(-5rem,0px);
+  transform: translateX(-5rem);
+}
+
+@keyframes open{
+  0% { 
+    width: 16.8rem;
+    height: 40.0rem;
+    transform: translateY(-4.5rem);
+  }
+  
+  100% { 
+    width: 22.8rem;
+    height: 55.0rem;
+    /* top: 25%; */
+    transform: translateX(-5.0rem);
+    transform: rotate(-90deg);
+  }
+}
+.envelope .paper .message {
+  /* font-family: "Satisfy", cursive; */
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  position: relative;
+  top: 44%;
+  left: -65%;
+  font-size: 2rem;
+  transform: rotate(90deg);
+  opacity: 0;
+  color: #FFF;
+}
+.envelope .paper .close {
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.2rem;
+  top: 1rem;
+  right: 1rem;
+}
+.envelope .shadow {
+  height: 3rem;
+  width: 16rem;
+  top: 250%;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(0, 0, 50, 0.3), rgba(250, 250, 250, 0));
+  filter: blur(0.5rem);
+}
+/* .top-cover{
+  animation: open 1s ease-out;
+  position: relative;
+  top: 0px;
+ 
+} */
+.top{
+  transform-origin: top;
+  transition: .6s;
+}
+.top-open{
+  transform: rotateX(160deg);
+}
+
