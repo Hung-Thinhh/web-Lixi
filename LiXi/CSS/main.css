@@ -595,7 +595,8 @@ h1 {
   width: 12.2rem;
   height: 12.2rem;
   margin: 3rem auto;
-  background-image: url(./LiXi/img/logo-removebg-preview.png);
+/*   background-image: url(./LiXi/img/logo-removebg-preview.png); */
+  background-image: url(https://github.com/Hung-Thinhh/web-Lixi/blob/main/LiXi/img/logo-removebg-preview.png?raw=true);
   background-size: contain;
 }
 .bottom p{
