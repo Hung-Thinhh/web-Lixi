@@ -2,12 +2,12 @@ const app = {
     isOpenenvelope : false,
     money:[
         
-            '/LiXi/img/10k.jpg',
-            '/LiXi/img/20k.jpg',
-            '/LiXi/img/50k.jpg',
-            '/LiXi/img/100k.jpg',
-            '/LiXi/img/200k.jpg',
-            '/LiXi/img/500k.jpg',
+            './LiXi/img/10k.jpg',
+            './LiXi/img/20k.jpg',
+            './LiXi/img/50k.jpg',
+            './LiXi/img/100k.jpg',
+            './LiXi/img/200k.jpg',
+            './LiXi/img/500k.jpg',
         
     ],
     handleEvents: function(){
