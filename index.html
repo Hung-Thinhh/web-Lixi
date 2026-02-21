@@ -1,105 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./LiXi/CSS/main.css">
-    <link rel="stylesheet" href="./LiXi/CSS/main.css">
-    <link rel="stylesheet" href="./LiXi/CSS/reponsive.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="main">
-        <div class="patterns">
-            <svg width="100%" height="120px">
-              <defs>
-                <pattern id="polka-dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                  <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
-                </pattern>
-                <style>
-                  @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
-                </style>
-        
-              </defs>
-        
-              <rect x="0" y="0" width="100%" height="0%" fill="url(#polka-dots)"> </rect>
-        
-              <text x="50%" y="72%" text-anchor="middle">
-                Chúc Mừng Năm Mới  
-              </text>
-              
-            </svg>
-        </div>
-          <!-- // -->
-        <p class="Yearta">
-          <span>
-            Xuân Quý Mão
-          </span>
-        </p>
-        <div class="Year">
-          <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
+<html lang="vi">
 
-          <h1><span class='one'>2</span><span class='two'>0</span><span class='three'>2</span><span class='four'>3</span></h1>
-        </div>
-        <div class="mid">
-          <div class="gif">
-          </div>
-          <div class="book">
-            <div class="back"></div>
-            <div class="page2">
-              <p>Năm mới càng sung sức, không bực tức, không đau nhức, <br> gấp đôi lợi tức, tiền vào thơm phức.<br> Năm mới chúc anh em sức khỏe vô biên, kiếm được nhiều tiền,<br> đời sướng như tiên, chẳng ai làm phiền.</p>  
-  
-            </div>
-            <div class="front frontbackground"></div>
-          </div>
-        </div>
-        <div class="icon1">
-            <img src="./LiXi/img/cat-2.png" alt="">
-        </div>
-        <div class="btn">
-          <button class="btn-item">
-            <span>Nhận lì xì</span>
-          </button>
-        </div>
-        <div class="icon2">
-            <img src="./LiXi/img/image-removebg-preview.png" alt="">
-        </div>
-        <div class="firework firework1"></div>
-        <div class="firework firework2"></div>
-        <div class="firework firework3"></div>
-        
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💖 Chúc Mừng Năm Mới 2026 💖</title>
+  <link rel="stylesheet" href="./LiXi/CSS/main.css">
+  <link rel="stylesheet" href="./LiXi/CSS/reponsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Hoa anh đào rơi -->
+  <div class="petals-container" id="petalsContainer"></div>
+
+  <!-- Màn hình chính -->
+  <div class="main">
+    <!-- Particles nền -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <div class="hero-header">
+      <p class="subtitle-top">✨ Gửi đến em yêu ✨</p>
+      <h1 class="main-title">
+        <span class="title-line1">Chúc Mừng</span>
+        <span class="title-line2">Năm Mới</span>
+      </h1>
+      <div class="year-badge">
+        <span class="year-text">2026</span>
+      </div>
     </div>
 
-    <div class="modal">
-      <div class="modal__overlay">
-        <canvas id="canvas"></canvas>
+    <!-- THIỆP FLIP CARD -->
+    <div class="flip-card-container">
+      <p class="card-hint"><i class="fa fa-hand-pointer"></i> Chạm để mở thiệp</p>
+      <div class="flip-card" id="flipCard">
+        <div class="flip-card-inner">
+          <!-- MẶT TRƯỚC -->
+          <div class="flip-card-front">
+            <div class="card-front-decor top-left">✿</div>
+            <div class="card-front-decor top-right">✿</div>
+            <div class="card-front-decor bottom-left">✿</div>
+            <div class="card-front-decor bottom-right">✿</div>
+            <div class="card-front-content">
+              <div class="card-front-icon">🌸</div>
+              <h2 class="card-front-title">Happy New Year</h2>
+              <div class="card-front-divider"></div>
+              <p class="card-front-year">2026</p>
+              <p class="card-front-sub">Bính Ngọ · Mùa Xuân Yêu Thương</p>
+              <div class="card-front-heart">💖</div>
+            </div>
+          </div>
+          <!-- MẶT SAU - LỜI CHÚC -->
+          <div class="flip-card-back">
+            <div class="card-back-pattern"></div>
+            <div class="card-back-content">
+              <div class="card-back-hearts">💕</div>
+              <h3 class="card-back-title">Gửi Em Yêu</h3>
+              <div class="card-back-divider"></div>
+              <p class="card-back-wish">
+                Chúc em iu ngày càng xinh đẹp, sức khoẻ lun tốt,<br>
+                Có công việc siu đỉnh, tiền đếm mỏi tay <br>
+                Học giỏi, ngoan ngoãn, nghe lời anh, mãi yêu em !!<br>
+                <br>
+              </p>
+              <div class="card-back-divider"></div>
+              <p class="card-back-sign">~ Với tất cả yêu thương 💖</p>
+              <p class="card-back-from">Của anh 🥰</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="envelope">
-        <div class="cover">
-          <div class="bottom">
-              <p class="title">CHÚC MỪNG NĂM MỚI TIỀN TÀI TIẾN TỚI <br>Tết đến - Tự do - Lì xì</p>
-              <div class="logo" ></div>
-              <p class="p1">giấy chứng nhận</p>
-              <p class="p2">quyền sử dụng đất</p>
+    </div>
+
+    <!-- Nút nhận lì xì -->
+    <div class="btn" id="btnLixi">
+      <button class="btn-item" id="btnOpenLixi">
+        <i class="fa fa-gift"></i>
+        <span>Nhận Lì Xì ❤️</span>
+      </button>
+    </div>
+
+    <!-- Pháo bông CSS -->
+    <div class="firework firework2"></div>
+    <div class="firework firework3"></div>
+  </div>
+
+  <!-- Modal lì xì -->
+  <div class="modal" id="modal">
+    <div class="modal__overlay">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="lixi-ui" id="lixiUI">
+      <!-- Header -->
+      <button class="lixi-close" id="lixiClose"><i class="fa fa-times"></i></button>
+      <h2 class="lixi-title">🧧 Lì Xì Của Em Iu 🧧</h2>
+      <p class="lixi-subtitle">Chạm vào từng bao để mở nhé 💕</p>
+
+      <!-- 3 Bao Lì Xì -->
+      <div class="lixi-envelopes">
+        <div class="lixi-envelope" data-index="0" id="env0">
+          <div class="env-front">
+            <div class="env-seal">福</div>
+            <div class="env-label">Bao 1</div>
+            <div class="env-tap">Chạm mở</div>
           </div>
-          <!-- <div class="side">
-            <div class="left"></div>
-            <div class="right"></div>
-          </div> -->
-          <div class="top">
-            <div class="top-cover"></div>
+          <div class="env-result" id="result0">
+            <img class="env-money-img" id="img0" src="" alt="Tiền lì xì" />
+            <div class="env-money-value" id="value0"></div>
           </div>
         </div>
-        <div class="paper" >
-          <div class="message">Hình ảnh chỉ mang tính TƯỢNG TRƯNG 😘😜 </div>
-          <div class="close"> <i class="fa fa-times"> </i></div>
+
+        <div class="lixi-envelope" data-index="1" id="env1">
+          <div class="env-front">
+            <div class="env-seal">禄</div>
+            <div class="env-label">Bao 2</div>
+            <div class="env-tap">Chạm mở</div>
+          </div>
+          <div class="env-result" id="result1">
+            <img class="env-money-img" id="img1" src="" alt="Tiền lì xì" />
+            <div class="env-money-value" id="value1"></div>
+          </div>
         </div>
-        <div class="shadow"></div>
-      </div> 
-    </div>     
-    <script src="./LiXi/Js/js.js" src=""></script>
+
+        <div class="lixi-envelope" data-index="2" id="env2">
+          <div class="env-front">
+            <div class="env-seal">寿</div>
+            <div class="env-label">Bao 3</div>
+            <div class="env-tap">Chạm mở</div>
+          </div>
+          <div class="env-result" id="result2">
+            <img class="env-money-img" id="img2" src="" alt="Tiền lì xì" />
+            <div class="env-money-value" id="value2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tổng kết -->
+      <div class="lixi-summary" id="lixiSummary">
+        <div class="summary-confetti">🎉🎊🎉</div>
+        <h3 class="summary-title">Tổng Lì Xì Của Em!</h3>
+        <div class="summary-total" id="summaryTotal"></div>
+        <p class="summary-message">Năm mới vạn sự như ý,<br>tình yêu mãi bền lâu 💖<br>Chúc em luôn hạnh phúc! 🥰</p>
+        <button class="summary-btn" id="summaryCloseBtn">Mai anh sẽ phát lì xì cho babii ❤️</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./LiXi/Js/js.js"></script>
 </body>
+
 </html>

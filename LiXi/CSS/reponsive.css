@@ -1,111 +1,189 @@
-@media (max-width: 599px){
-    html{
-        font-size: 31.25%;
-        line-height: 1.6rem;
+/* ===== TABLET ===== */
+@media (max-width: 900px) {
+    .flip-card {
+        width: 30rem;
+        height: 42rem;
     }
-    .main{
-        background-size: contain;
-        background-color: #a51c1c;
+
+    .card-front-title {
+        font-size: 3.8rem;
     }
-    .patterns{
-        margin-top: -5rem;
+
+    .card-front-year {
+        font-size: 4rem;
     }
-    svg text{
-        font-size: 5rem;
+
+    .card-front-sub {
+        font-size: 1.6rem;
     }
-    .Year h1{
-        margin-top: 1.5rem;
+
+    .card-back-title {
+        font-size: 3rem;
     }
-    .gif{
-        width: 20rem;
-        height: 22.5rem;
-        top: 35%;
-        left: 0%;
+
+    .card-back-wish {
+        font-size: 2rem;
     }
-    .book{
-        top: 35%;
-        width: 20rem;
-        height: 22rem;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 599px) {
+    html {
+        font-size: 50%;
     }
-    .back{
-        width: 20rem;
+
+    .hero-header {
+        padding: 2rem 1.5rem 1rem;
     }
-    .front {
-        width: 20rem;
+
+    .subtitle-top {
+        font-size: 1.6rem;
     }
-    .page2{
-        width: 42rem;
-        left: -105.2%;
+
+    .title-line1 {
+        font-size: 3.8rem;
     }
-    .page2 p{
-        font-size: 5.6rem;
-        line-height: 3.2rem;
+
+    .title-line2 {
+        font-size: 5.5rem;
     }
-    .icon1 {
-        width: 18rem;
-        top: 60%;
-        left: -4%;
+
+    .year-text {
+        font-size: 2.5rem;
     }
-    .icon1 img {
-        width: 18rem;
+
+    .year-badge {
+        padding: 0.4rem 2rem;
     }
-    .btn{
-        margin-top: 40rem;
-        height: 6rem;
+
+    /* Thiệp */
+    .flip-card {
+        width: 28rem;
+        height: 38rem;
     }
-    .btn-item{
-        width: 20rem;
-        font-size: 5rem;
+
+    .card-front-icon {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
     }
-    .icon2{
-        right: 2rem;
-        top: 13rem; 
-        width: 15rem;
+
+    .card-front-title {
+        font-size: 3.2rem;
     }
-    .icon2 img{
-        width: 15rem;
+
+    .card-front-year {
+        font-size: 3.5rem;
     }
-    .bottom .p1{
+
+    .card-front-sub {
+        font-size: 1.4rem;
+    }
+
+    .card-front-heart {
         font-size: 2.2rem;
     }
-    .bottom .p2{
+
+    .card-front-decor {
+        font-size: 1.8rem;
+    }
+
+    .card-back-hearts {
+        font-size: 2.5rem;
+    }
+
+    .card-back-title {
         font-size: 2.8rem;
-        line-height: 15px;
     }
-    .envelope .paper .message{
-        line-height: 4rem;
-        font-size: 4rem;
+
+    .card-back-wish {
+        font-size: 1.8rem;
+        line-height: 1.6;
+    }
+
+    .card-back-sign {
+        font-size: 1.4rem;
+    }
+
+    .card-back-from {
+        font-size: 1.5rem;
+    }
+
+    .card-back-content {
+        padding: 2rem 1.8rem;
+    }
+
+    /* Hint */
+    .card-hint {
+        font-size: 1.3rem;
+    }
+
+    /* Button */
+    .btn-item {
+        padding: 1.2rem 3rem;
+        font-size: 1.8rem;
+    }
+
+    .btn-item i {
+        font-size: 1.8rem;
+    }
+
+    /* Envelope */
+    .envelope {
+        width: 19rem;
+        height: 26rem;
+    }
+
+    .envelope .cover .top,
+    .envelope .cover .bottom {
+        width: 19rem;
+    }
+
+    .bottom .title {
+        margin-top: 4rem;
+        font-size: 1rem;
+    }
+
+    .bottom .p1 {
+        font-size: 1.3rem;
+    }
+
+    .bottom .p2 {
+        font-size: 1.5rem;
+    }
+
+    .envelope .paper {
+        width: 14.5rem;
+        height: 35rem;
+    }
+
+    .envelope .paper .message {
+        font-size: 2rem;
+        line-height: 3rem;
         top: 40%;
-        font-family: 'Times New Roman', Times, serif;
+        left: -60%;
     }
-    /* @keyframes firework2 {
-        0% { 
-          transform: translate(0%, 0vh);
-          width: 0.5vmin;
-          opacity: 1;
-        }
-        50% { 
-          width: 0.5vmin;
-          opacity: 1;
-        }
-        100% { 
-          width: 25vmin; 
-          opacity: 1; 
-        }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 380px) {
+    .flip-card {
+        width: 24rem;
+        height: 34rem;
     }
-    @keyframes firework {
-        0% { 
-          transform: translate(0%, 0vh);
-          width: 0.5vmin;
-          opacity: 1;
-        }
-        50% { 
-          width: 3.5vmin;
-          opacity: 1;
-        }
-        100% { 
-          width: 20vmin; 
-          opacity: 1; 
-        }
-      } */
+
+    .card-front-title {
+        font-size: 2.8rem;
+    }
+
+    .card-front-year {
+        font-size: 3rem;
+    }
+
+    .card-back-wish {
+        font-size: 1.6rem;
+    }
+
+    .card-back-title {
+        font-size: 2.5rem;
+    }
 }
